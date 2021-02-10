@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+#wrap {width:100%;height:700px;background:violet;}
+#wrap #header{z-index:3;position:relative;width:100%;height:100px;background: yellow;}
+#wrap #header .wrapper {width:1200px;height:100%;margin:0 auto;background: tomato;}
+#wrap #header .wrapper .content {width:100%;height:100%;}
+#wrap #header .wrapper .content .left{text-align:center;line-height:100px;float:left;width:200px;height:100%;background: slateblue;}
+#wrap #header .wrapper .content .right{float:left;width:1000px;height:100%;background:slategray;}
+
+#wrap #header .wrapper .content .right #nav{text-align:right;margin:50px 25px 25px 0;}
+#wrap #header .wrapper .content .right #nav > ul{display:inline-block;background: teal;}
+/* #wrap #header .wrapper .content .right #nav{width:720px;margin:50px 25px 25px  auto;}
+#wrap #header .wrapper .content .right #nav > ul{width:100%;} */
+#wrap #header .wrapper .content .right #nav > ul > li{text-align:center;float:left;width:180px;height:50px;background: thistle;}
+#wrap #header .wrapper .content .right #nav > ul > li > a{display:block;height:50px;line-height:50px;background: #000;color:#fff;transition:all 0.3s;}
+#wrap #header .wrapper .content .right #nav > ul > li > a:hover {background: #fff;color:#000;}
+
+#wrap #header .wrapper .content .right #nav > ul > li .sub {width:100%;display:none;}
+#wrap #header .wrapper .content .right #nav > ul > li .sub > ul {width:100%;}
+#wrap #header .wrapper .content .right #nav > ul > li .sub > ul > li {line-height: 50px;border-top: solid 1px #fff;}
+#wrap #header .wrapper .content .right #nav > ul > li .sub > ul > li > a{display:block;background: #000;color:#fff;transition:all 0.3s;}
+#wrap #header .wrapper .content .right #nav > ul > li .sub > ul > li > a:hover{background: #fff;color:#000;}
+
+
+/* #wrap #header .wrapper .content .right #nav > ul > li:hover .sub {display:block;}
+#wrap #header .wrapper .content .right #nav > ul > li:hover .sub {display:block;} */
+#wrap #header .wrapper .content .right #nav:hover .sub {display:block;}
+#wrap #header .wrapper .content .right #nav:focus .sub {display:block;}
+
+
+#wrap #main{z-index:2;position:relative;width:1200px;height:500px;margin:0 auto;background: wheat;}
+#wrap #main .wrapper {width:1200px;height:100%;margin:0 auto;background:turquoise;}
+#wrap #main .wrapper #section1{text-align:center;line-height:300px;width:1200px;height:300px;background:teal;}
+
+
+
+#wrap #main .wrapper #section1 .slide-container{position:relative;width:100%;height:300px;}
+#wrap #main .wrapper #section1 .slide-container .slide-view{z-index:1;position:relative;width:100%;height:300px;overflow:hidden;}
+#wrap #main .wrapper #section1 .slide-container .slide-view .slide-wrap{position:relative;left:0;width:4800px;height:300px;transition:all 0.8s;}
+#wrap #main .wrapper #section1 .slide-container .slide-view .slide-wrap .slide {float:left;width:1200px;height:300px;}
+#wrap #main .wrapper #section1 .slide-container .slide-view .slide-wrap .slide0 {background:url(../img/pasta-1181189_1920.jpg)no-repeat 50% 50%;background-size:cover;}
+#wrap #main .wrapper #section1 .slide-container .slide-view .slide-wrap .slide1 {background:url(../img/raspberries-5576401_1920.jpg)no-repeat 50% 50%;background-size:cover;}
+#wrap #main .wrapper #section1 .slide-container .slide-view .slide-wrap .slide2 {background:url(../img/raspberry-2023404_1920.jpg)no-repeat 50% 50%;background-size:cover;}
+#wrap #main .wrapper #section1 .slide-container .slide-view .slide-wrap .slide3 {background:url(../img/waffles-5192625_1920.jpg)no-repeat 50% 50%;background-size:cover;}
+
+/* 다음 이전 슬라이드 버튼 */
+#wrap #main .wrapper #section1 .slide-container .next-btn-wrap {transform:rotate(45deg);z-index:2;position:absolute;top:50%;margin-top:-30px;right:50px;width:60px;height:60px;border-top:solid 1px #fff;border-right:solid 1px #fff;}
+#wrap #main .wrapper #section1 .slide-container .next-btn-wrap a {display:block;width:100%;height:100%;}
+
+#wrap #main .wrapper #section1 .slide-container .prev-btn-wrap {transform:rotate(45deg);z-index:2;position:absolute;top:50%;margin-top:-30px;left:50px;width:60px;height:60px;border-left:solid 1px #fff;border-bottom:solid 1px #fff;}
+#wrap #main .wrapper #section1 .slide-container .prev-btn-wrap a {display:block;width:100%;height:100%;}
+
+
+#wrap #main .wrapper #section2{text-align:center;width:1200px;height:200px;background:thistle;}
+#wrap #main .wrapper #section2 .content{width:100%;height:100%;}
+#wrap #main .wrapper #section2 .content .left{z-index:1;position:relative;float:left;width:400px;height:200px;background:turquoise;}
+
+
+#wrap #main .wrapper #section2 .content .left .slide-container {position:relative;width:100%;height:200px;}
+#wrap #main .wrapper #section2 .content .left .slide-container .slide-view{position:relative;width:100%;height:200px;overflow:hidden;}
+#wrap #main .wrapper #section2 .content .left .slide-container .slide-view .slide-wrap {position:relative;left:0;width:1600px;height:200px;transition:all 0.8s ease-in-out;}
+#wrap #main .wrapper #section2 .content .left .slide-container .slide-view .slide-wrap .slide {float:left;width:400px;height:200px;}
+#wrap #main .wrapper #section2 .content .left .slide-container .slide-view .slide-wrap .slide0 {background:url(../img/pasta-1181189_1920.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrap #main .wrapper #section2 .content .left .slide-container .slide-view .slide-wrap .slide1 {background:url(../img/raspberries-5576401_1920.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrap #main .wrapper #section2 .content .left .slide-container .slide-view .slide-wrap .slide2 {background:url(../img/raspberry-2023404_1920.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrap #main .wrapper #section2 .content .left .slide-container .slide-view .slide-wrap .slide3 {background:url(../img/waffles-5192625_1920.jpg) no-repeat 50% 50%;background-size:cover;}
+
+#wrap #main .wrapper #section2 .content .left .slide-container .next-btn-wrap {z-index:1;display:block;position: absolute;top:50%;margin-top:-20px;right:20px;width:40px;height:40px;background:transparent;border-top:2px solid #fff;border-right:2px solid #fff;transform:rotate(45deg)}
+#wrap #main .wrapper #section2 .content .left .slide-container .next-btn-wrap a {display:block;width:100%;height:100%;background:transparent;}
+#wrap #main .wrapper #section2 .content .left .slide-container .prev-btn-wrap {z-index:1;display:block; position: absolute;top:50%;margin-top:-20px;left:20px;width:40px;height:40px;background:transparent;border-top:2px solid #fff;border-left:2px solid #fff;transform:rotate(-45deg);}
+#wrap #main .wrapper #section2 .content .left .slide-container .prev-btn-wrap a {display:block;width:100%;height:100%;background:transparent;}
+
+
+#wrap #main .wrapper #section2 .content .center{float:left;width:400px;height:200px;background:yellow;text-align:center;}
+
+
+#wrap #main .wrapper #section2 .content .center .slide-container{position:relative;width:100%;height:100%;}
+#wrap #main .wrapper #section2 .content .center .slide-container .slide-view{z-index:1;position:relative;width:100%;height:100%;overflow:hidden;}
+#wrap #main .wrapper #section2 .content .center .slide-container .slide-view .slide-wrap{position:relative;top:0;width:100%;height:800px;transition:all 0.8s ease-in-out;}
+#wrap #main .wrapper #section2 .content .center .slide-container .slide-view .slide-wrap .slide{width:100%;height:200px;}
+#wrap #main .wrapper #section2 .content .center .slide-container .slide-view .slide-wrap .slide0{background:url(../img/restaurant-img30.jpg)no-repeat 50% 50%;background-size:cover;}
+#wrap #main .wrapper #section2 .content .center .slide-container .slide-view .slide-wrap .slide1{background:url(../img/restaurant-img31.jpg)no-repeat 50% 50%;background-size:cover;}
+#wrap #main .wrapper #section2 .content .center .slide-container .slide-view .slide-wrap .slide2{background:url(../img/restaurant-img32.jpg)no-repeat 50% 50%;background-size:cover;}
+#wrap #main .wrapper #section2 .content .center .slide-container .slide-view .slide-wrap .slide3{background:url(../img/restaurant-img29.jpg)no-repeat 50% 50%;background-size:cover;}
+/* #wrap #main .wrapper #section2 .content .center .page{font-size:20px;color:#000;} */
+
+#wrap #main .wrapper #section2 .content .center .slide-container .next-btn-wrap{display:block;z-index:2;position:absolute;left:50%;margin-left:-20px;top:20px;width:40px;height:40px;transform:rotate(45deg);border-top:solid 1px #fff;border-left:solid 1px #fff;}
+#wrap #main .wrapper #section2 .content .center .slide-container .next-btn-wrap a{display:block;width:100%;height:100%;}
+#wrap #main .wrapper #section2 .content .center .slide-container .prev-btn-wrap{display:block;z-index:2;position:absolute;left:50%;margin-left:-20px;bottom:20px;width:40px;height:40px;transform:rotate(45deg);border-bottom:solid 1px #fff;border-right:solid 1px #fff;}
+#wrap #main .wrapper #section2 .content .center .slide-container .prev-btn-wrap a{display:block;width:100%;height:100%;}
+
+
+#wrap #main .wrapper #section2 .content .right{float:left;width:400px;height:200px;background:seashell;}
+#wrap #main .wrapper #section2 .content .right .slide-container {position:relative;width:100%;height:200px;}
+#wrap #main .wrapper #section2 .content .right .slide-container .slide-view{position:relative;width:100%;height:200px;overflow:hidden;}
+#wrap #main .wrapper #section2 .content .right .slide-container .slide-view .slide-wrap {position:relative;left:0;width:1600px;height:200px;transition:all 0.8s ease-in-out;}
+#wrap #main .wrapper #section2 .content .right .slide-container .slide-view .slide-wrap .slide {float:left;width:400px;height:200px;}
+#wrap #main .wrapper #section2 .content .right .slide-container .slide-view .slide-wrap .slide0 {background:url(../img/restaurant-img25.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrap #main .wrapper #section2 .content .right .slide-container .slide-view .slide-wrap .slide1 {background:url(../img/restaurant-img26.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrap #main .wrapper #section2 .content .right .slide-container .slide-view .slide-wrap .slide2 {background:url(../img/restaurant-img27.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrap #main .wrapper #section2 .content .right .slide-container .slide-view .slide-wrap .slide3 {background:url(../img/restaurant-img28.jpg) no-repeat 50% 50%;background-size:cover;}
+
+#wrap #main .wrapper #section2 .content .right .slide-container .next-btn-wrap {z-index:1;display:block;position: absolute;top:50%;margin-top:-20px;right:20px;width:40px;height:40px;background:transparent;border-top:2px solid #fff;border-right:2px solid #fff;transform:rotate(45deg)}
+#wrap #main .wrapper #section2 .content .right .slide-container .next-btn-wrap a {display:block;width:100%;height:100%;background:transparent;}
+#wrap #main .wrapper #section2 .content .right .slide-container .prev-btn-wrap {z-index:1;display:block; position: absolute;top:50%;margin-top:-20px;left:20px;width:40px;height:40px;background:transparent;border-top:2px solid #fff;border-left:2px solid #fff;transform:rotate(-45deg);}
+#wrap #main .wrapper #section2 .content .right .slide-container .prev-btn-wrap a {display:block;width:100%;height:100%;background:transparent;}
+
+
+
+
+#wrap #footer{z-index:1;position:relative;width:100%;height:100px;background: tomato;}
+#wrap #footer .wrapper {width:1200px;height:100%;margin:0 auto;background:yellowgreen ;}
+#wrap #footer .wrapper #section3{text-align:center;line-height:50px;float:left;width:1000px;height:100%;background:sienna}
+#wrap #footer .wrapper #section3 .content{width:100%;height:100%;}
+#wrap #footer .wrapper #section3 .content .top{width:100%;height:50px;background:springgreen;}
+#wrap #footer .wrapper #section3 .content .bottom{width:100%;height:50px;background:slateblue;}
+
+#wrap #footer .wrapper #section4{text-align:center;line-height:50px;float:left;width:200px;height:100%;background:sienna;}
